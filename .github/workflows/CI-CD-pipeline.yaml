@@ -32,7 +32,7 @@ jobs:
                 context: .
                 file: ./app/Dockerfile
                 push: true
-                tags: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/my-repo-name:latest
+                tags: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/demo-ecr-repo:latest
 
             # Step 5: Set up AWS CLI with credentials for deployment
             - name: Set up AWS CLI
