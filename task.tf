@@ -9,7 +9,7 @@ resource "aws_ecs_task_definition" "ecs_task" {
   container_definitions = jsonencode([
     {
       name      = "my-ecs-fargate-cluster"
-      image     = "242201286182.dkr.ecr.ap-south-1.amazonaws.com/poc1-ecr-repo:latest"
+      image     = "242201286182.dkr.ecr.ap-south-1.amazonaws.com/demo-ecr-repo:latest"
       cpu       = 256
       memory    = 512
       essential = true
